@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".DetailHeroMageActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_marginTop="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_mage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout_mage1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/linearLayout_mage"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/gambarHeroMage"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:src="@drawable/mage"/>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_below="@id/gambarHeroMage"
+                    android:id="@+id/nama_hero_mage"
+                    android:textColor="@android:color/black"
+                    android:textSize="22sp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Nama Hero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    fontPath="fonts/Poppins-Bold.otf"
+                    tools:ignore="MissingPrefix"/>
+
+                <TextView
+                    android:layout_below="@id/nama_hero_mage"
+                    android:id="@+id/role_hero_mage"
+                    android:textColor="@android:color/black"
+                    android:textSize="19sp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Role Hero"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    fontPath="fonts/Poppins-Bold.otf"
+                    tools:ignore="MissingPrefix"/>
+
+                <ScrollView
+                    android:scrollbars="none"
+                    android:layout_below="@id/role_hero_mage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/kisah_hero_mage"
+                        android:textColor="@android:color/black"
+                        android:textSize="19sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="8dp"
+                        android:padding="10dp"
+                        android:text="Kisah Hero"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        fontPath="fonts/Poppins-Bold.otf"
+                        tools:ignore="MissingPrefix"/>
+                </ScrollView>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

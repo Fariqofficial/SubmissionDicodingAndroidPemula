@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".DetailHeroTankActivity">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_detail_tank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearLayout"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/pctHeroTank"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:src="@drawable/tank"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_below="@id/pctHeroTank"
+                android:id="@+id/hero_tank"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Nama Hero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"/>
+
+            <TextView
+                android:layout_below="@id/hero_tank"
+                android:id="@+id/role_hero"
+                android:textColor="@android:color/black"
+                android:textSize="19sp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Role Hero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"/>
+
+            <ScrollView
+                android:scrollbars="none"
+                android:layout_below="@id/role_hero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/kisah_hero"
+                android:textColor="@android:color/black"
+                android:textSize="19sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"
+                android:padding="10dp"
+                android:text="Kisah Hero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                fontPath="fonts/Poppins-Bold.otf"
+                tools:ignore="MissingPrefix"/>
+            </ScrollView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
+</RelativeLayout>

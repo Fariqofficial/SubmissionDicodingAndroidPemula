@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="@color/bg_color">
+
+    <RelativeLayout
+        android:id="@+id/relay_tank"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:padding="16dp"
+        android:background="@android:color/white">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pictTank"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/tank"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/pictTank"
+            android:layout_toEndOf="@id/pictTank">
+
+            <TextView
+                android:id="@+id/namaTank"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Nama Hero"/>
+
+            <TextView
+                android:id="@+id/roieTank"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Role Hero"/>
+
+            <TextView
+                android:id="@+id/tankStory"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Kisah Hero"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
